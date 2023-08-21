@@ -31,6 +31,7 @@ const MobilePreview = ({
           </button>
           <button
             id="button2"
+            style={tooltipStyles}
             className={targetElement === "button2" ? "targeted" : ""}
           >
             {button2Text}
@@ -41,6 +42,7 @@ const MobilePreview = ({
         <div className="button-row centered">
           <button
             id="button3"
+            style={tooltipStyles}
             className={targetElement === "button3" ? "targeted centered" : ""}
           >
             {button3Text}
@@ -51,12 +53,14 @@ const MobilePreview = ({
         <div className="button-row">
           <button
             id="button4"
+            style={tooltipStyles}
             className={targetElement === "button4" ? "targeted" : ""}
           >
             {button4Text}
           </button>
           <button
             id="button5"
+            style={tooltipStyles}
             className={targetElement === "button5" ? "targeted" : ""}
           >
             {button5Text}
