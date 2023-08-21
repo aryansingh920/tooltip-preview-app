@@ -1,0 +1,70 @@
+.outerContainer {
+  width: 50%;
+  margin: 20px 0 20px 100px; /* Top, right, bottom, left margins */
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.formContainer {
+  background-color: #f9f9f9; 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  display: block;
+}
+
+input, select {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #007BFF;
+}
+
+/* Styling for elements on the same line */
+.row {
+  display: flex;
+  gap: 12px; 
+}
+
+.row > div {
+  flex: 1;
+}
+
+/* Specific customizations */
+select[name="targetElement"], 
+input[name="tooltipText"],
+input[name="textColor"],
+input[name="backgroundColor"] {
+  width: 800px;
+  height: 39px;
+  border-radius: 6px;
+}
+
+input[name="textSize"],
+input[name="padding"],
+input[name="cornerRadius"],
+input[name="tooltipWidth"],
+input[name="arrowWidth"],
+input[name="arrowHeight"] {
+  width: 350px;
+  height: 39px;
+  padding: 0px 12px;
+  border-radius: 6px;
+}
