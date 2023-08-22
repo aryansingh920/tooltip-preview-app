@@ -1,13 +1,14 @@
-import React,{useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './TooltipForm.css';
 
-const TooltipForm = ({ 
+const TooltipForm = ({
   setButton1Text,
   setButton2Text,
   setButton3Text,
   setButton4Text,
   setButton5Text,
-  onChange
+  onChange,
+  setTooltipSettingsApp
 }) => {
   const [tooltipSettings, setTooltipSettings] = useState(null);
   const [text, setText] = useState("");
@@ -15,15 +16,30 @@ const TooltipForm = ({
 
   useEffect(() => {
     if (tooltipSettings === "button1")
+    {
+      setTooltipSettingsApp({ targetElement: "button1" });
       setButton1Text(text);
+    }
     else if (tooltipSettings === "button2")
+    {
+      setTooltipSettingsApp({ targetElement: "button2" });
       setButton2Text(text);
+    }
     else if (tooltipSettings === "button3")
+    {
+      setTooltipSettingsApp({ targetElement: "button3" });
       setButton3Text(text);
+    }
     else if (tooltipSettings === "button4")
+    {
+      setTooltipSettingsApp({ targetElement: "button4" });
       setButton4Text(text);
+    }
     else if (tooltipSettings === "button5")
+    {
+      setTooltipSettingsApp({ targetElement: "button5" });
       setButton5Text(text);
+    }
 
   }, [tooltipSettings, text, setButton1Text, setButton2Text, setButton3Text, setButton4Text, setButton5Text]);
 
@@ -38,7 +54,7 @@ const TooltipForm = ({
       <div className="formContainer">
         <div>
           <label>Target Element:</label>
-          <select name="targetElement" onChange={(e)=>setTooltipSettings(e.target.value)}>
+          <select name="targetElement" onChange={(e) => setTooltipSettings(e.target.value)}>
             <option value="button1">Button 1</option>
             <option value="button2">Button 2</option>
             <option value="button3">Button 3</option>
@@ -49,19 +65,19 @@ const TooltipForm = ({
 
         <div>
           <label>Tooltip Text:</label>
-          <input 
-            type="text" 
+          <input
+            type="text"
             value={text}
-            placeholder="Tooltip Text" 
+            placeholder="Tooltip Text"
             name="tooltipText"
-            onChange={(e)=>setText(e.target.value)}
+            onChange={(e) => setText(e.target.value)}
           />
         </div>
 
         <div className="row">
           <div>
             <label>Text Size:</label>
-            <input 
+            <input
               type="number"
               placeholder="Text Size"
               name="textSize"
@@ -71,7 +87,7 @@ const TooltipForm = ({
 
           <div>
             <label>Padding:</label>
-            <input 
+            <input
               type="number"
               placeholder="Padding"
               name="padding"
@@ -82,7 +98,7 @@ const TooltipForm = ({
 
         <div>
           <label>Text Colour:</label>
-          <input 
+          <input
             type="color"
             name="textColor"
             onChange={handleInputChange}
@@ -91,7 +107,7 @@ const TooltipForm = ({
 
         <div>
           <label>Background Colour:</label>
-          <input 
+          <input
             type="color"
             name="backgroundColor"
             onChange={handleInputChange}
@@ -101,17 +117,17 @@ const TooltipForm = ({
         <div className="row">
           <div>
             <label>Corner Radius:</label>
-            <input 
+            <input
               type="number"
               placeholder="Corner Radius"
               name="cornerRadius"
               onChange={handleInputChange}
             />
           </div>
-          
+
           <div>
             <label>Tooltip Width:</label>
-            <input 
+            <input
               type="number"
               placeholder="Tooltip Width"
               name="tooltipWidth"
@@ -123,17 +139,17 @@ const TooltipForm = ({
         <div className="row">
           <div>
             <label>Arrow Width:</label>
-            <input 
+            <input
               type="number"
               placeholder="Arrow Width"
               name="arrowWidth"
               onChange={handleInputChange}
             />
           </div>
-          
+
           <div>
             <label>Arrow Height:</label>
-            <input 
+            <input
               type="number"
               placeholder="Arrow Height"
               name="arrowHeight"

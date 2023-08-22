@@ -30,19 +30,19 @@ const MobilePreview = ({
                 backgroundColor: "#000",
                 color: "#FFF",
                 fontSize: "12px",
-                zIndex: "100",
+                zIndex: 100,
                 top: "15px",
-                left:"44px"
+                left: "44px",
+                ...(targetElement === "button1" && tooltipStyles)
               }}
+              className={targetElement === "button1" ? "targeted" : ""}
             >
               {button1Text}
             </div>
             <button
               id="button1"
-              style={tooltipStyles}
-              className={targetElement === "button1" ? "targeted" : ""}
             >
-              {"Button 1"}
+            Button 1
             </button>
           </>
 
@@ -56,16 +56,16 @@ const MobilePreview = ({
                 zIndex: "100",
                 left: "240px",
                 top: "15px",
+                ...(targetElement === "button2" && tooltipStyles)
               }}
+              className={targetElement === "button2" ? "targeted" : ""}
             >
               {button2Text}
             </div>
             <button
               id="button2"
-              style={tooltipStyles}
-              className={targetElement === "button2" ? "targeted" : ""}
             >
-              {"Button 2"}
+              Button 2
             </button>
           </>
 
@@ -80,18 +80,18 @@ const MobilePreview = ({
               color: "#FFF",
               fontSize: "12px",
               zIndex: "100",
-              top:"328px"
-              // left: "204px",
+              top: "328px",
+              ...(targetElement === "button3" && tooltipStyles)
             }}
+            className={targetElement === "button3" ? "targeted centered" : ""}
           >
             {button3Text}
           </div>
           <button
             id="button3"
-            style={tooltipStyles}
-            className={targetElement === "button3" ? "targeted centered" : ""}
+
           >
-            {"Button 3"}
+            Button 3
           </button>
         </div>
 
@@ -106,17 +106,17 @@ const MobilePreview = ({
               zIndex: "100",
               left: "44px",
               bottom: "58px",
+              ...(targetElement === "button4" && tooltipStyles)
               // left: "204px",
             }}
+            className={targetElement === "button4" ? "targeted" : ""}
           >
             {button4Text}
           </div>
           <button
             id="button4"
-            style={tooltipStyles}
-            className={targetElement === "button4" ? "targeted" : ""}
           >
-            {"Button 4"}
+            Button 4
           </button>
 
           <div
@@ -127,17 +127,17 @@ const MobilePreview = ({
               fontSize: "12px",
               zIndex: "100",
               left: "233px",
-              bottom :"58px"
+              bottom: "58px",
+              ...(targetElement === "button5" && tooltipStyles)
             }}
+            className={targetElement === "button5" ? "targeted" : ""}
           >
             {button5Text}
           </div>
           <button
             id="button5"
-            style={tooltipStyles}
-            className={targetElement === "button5" ? "targeted" : ""}
           >
-            {"Button 5"}
+            Button 5
           </button>
         </div>
 

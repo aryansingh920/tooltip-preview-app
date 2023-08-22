@@ -60,6 +60,7 @@ function App() {
         setButton3Text={setButton3Text}
         setButton4Text={setButton4Text}
         setButton5Text={setButton5Text}
+        setTooltipSettingsApp={setTooltipSettings}
         onChange={handleFormChange}
 
       />
