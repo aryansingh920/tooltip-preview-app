@@ -27,10 +27,12 @@ const MobilePreview = ({
             <div
               style={{
                 position: "absolute",
-                backgroundColor: "#FFF",
-                color: "#000",
+                backgroundColor: "#000",
+                color: "#FFF",
                 fontSize: "12px",
                 zIndex: "100",
+                top: "15px",
+                left:"44px"
               }}
             >
               {button1Text}
@@ -48,11 +50,12 @@ const MobilePreview = ({
             <div
               style={{
                 position: "absolute",
-                backgroundColor: "#FFF",
-                color: "#000",
+                backgroundColor: "#000",
+                color: "#FFF",
                 fontSize: "12px",
                 zIndex: "100",
-                left: "204px",
+                left: "240px",
+                top: "15px",
               }}
             >
               {button2Text}
@@ -73,10 +76,11 @@ const MobilePreview = ({
           <div
             style={{
               position: "absolute",
-              backgroundColor: "#FFF",
-              color: "#000",
+              backgroundColor: "#000",
+              color: "#FFF",
               fontSize: "12px",
               zIndex: "100",
+              top:"328px"
               // left: "204px",
             }}
           >
@@ -96,10 +100,12 @@ const MobilePreview = ({
           <div
             style={{
               position: "absolute",
-              backgroundColor: "#FFF",
-              color: "#000",
+              backgroundColor: "#000",
+              color: "#FFF",
               fontSize: "12px",
               zIndex: "100",
+              left: "44px",
+              bottom: "58px",
               // left: "204px",
             }}
           >
@@ -116,11 +122,12 @@ const MobilePreview = ({
           <div
             style={{
               position: "absolute",
-              backgroundColor: "#FFF",
-              color: "#000",
+              backgroundColor: "#000",
+              color: "#FFF",
               fontSize: "12px",
               zIndex: "100",
-              left: "204px",
+              left: "233px",
+              bottom :"58px"
             }}
           >
             {button5Text}
