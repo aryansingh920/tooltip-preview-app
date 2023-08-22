@@ -14,8 +14,6 @@ const TooltipForm = ({
 
 
   useEffect(() => {
-    // console.log("Here", tooltipSettings, text)
-    
     if (tooltipSettings === "button1")
       setButton1Text(text);
     else if (tooltipSettings === "button2")

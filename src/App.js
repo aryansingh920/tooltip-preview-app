@@ -6,20 +6,14 @@ import TooltipForm from './TooltipForm';
 
 function App() {
 
-  const [ button1Text, setButton1Text ] = useState("Button 1");
-  const [ button2Text, setButton2Text ] = useState("Button 2");
-  const [ button3Text, setButton3Text ] = useState("Button 3");
-  const [ button4Text, setButton4Text ] = useState("Button 4");
-  const [ button5Text, setButton5Text ] = useState("Button 5");
+  const [ button1Text, setButton1Text ] = useState("");
+  const [ button2Text, setButton2Text ] = useState("");
+  const [ button3Text, setButton3Text ] = useState("");
+  const [ button4Text, setButton4Text ] = useState("");
+  const [ button5Text, setButton5Text ] = useState("");
 
-  // setButton1Text("Button 1");
-  // setButton2Text("Button 2");
-  // setButton3Text("Button 3");
-  // setButton4Text("Button 4");
-  // setButton5Text("Button 5");
 
   useEffect(() => {
-    // console.log("Here", button1Text,button2Text,button3Text,button4Text,button5Text)
   }, [button1Text,button2Text,button3Text,button4Text,button5Text]);
 
   const [tooltipSettings, setTooltipSettings] = useState({
